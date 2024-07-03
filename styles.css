@@ -1,0 +1,72 @@
+
+/* Body has a default margin value to reset make it 0 */
+body{
+    margin:0;
+    padding:10px;
+    width:100%;
+    min-height: 100vh;
+
+    background-color: #0d1b2a; /* Midnight shade */
+    color: #ffffff; /* White text for contrast */
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+nav{
+    width:100%;
+    height:auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border:1px solid red;
+}
+
+main {
+    width:100%;
+
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+    border:1px solid red;
+}
+
+.map-container{
+    width:100%;
+    height:300px;
+    max-width: 800px;
+    margin: 10px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+footer{
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border:1px solid red;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .map-container{
+        height:500px;
+    }
+}
